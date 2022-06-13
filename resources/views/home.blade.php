@@ -43,12 +43,17 @@
     <div class="container cards-container">
       <div class="card-group">
         <div class="btn-top">Current Series</div>
-          <div class="row">
+          <div class="row d-flex">
             @foreach ($movies as $movie)
-              <ul class="card-box">
-                <li><a href="route('detail', $movie->it)" {{$movie->title}}></a></li>
-                  
-              </ul>
+              <div class="card-box">
+                  <div class="card-body">
+                    <h5 class="card-title">{{$movie->title}}</h5>
+                    <p class="card-text">{{$movie->original_title}}</p>
+                    <p class="card-text">{{$movie->nationality}}</p>
+                    <p class="card-text">{{$movie->date}}</p>
+                    <p class="card-text">{{$movie->vote}}</p>
+                  </div>
+                </div>
             @endforeach
           </div> <!-- /row -->
         </div> <!-- /btn-top -->   
