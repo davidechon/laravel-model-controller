@@ -19,7 +19,7 @@
         @yield('mainContent')
 
         <div class="container">
-            @dump($movies)
+            {{-- @dump($movies) --}}
             <h1 class="text-center">Home</h1>
           
             <ul>
