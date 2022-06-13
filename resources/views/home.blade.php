@@ -1,13 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title> Model Controller </title>
-</head>
-<body>
-  <h1>Prova</h1>
-  
-</body>
-</html>
+@extends('layouts.base')
+
+@section('pageTitle', 'Movies - home')
+
+@section('mainContent')
+
+<div class="text-center">Ciao</div>
+<h2> <i class="fa-brand fa-android"></i> </h2>
+@endsection
