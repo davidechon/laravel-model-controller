@@ -25,14 +25,14 @@
     <main>
 
         <div class="container">
-            @dump($movies)
-            {{-- <h1 class=text-center>Ciao! <i class="fa-brand fa-android"></i></h1>
+            {{-- @dump($movies) --}}
        
             <ul>
                 @foreach ($movies as $movie)
-                <li><a href="route('detail', $movie->it)" {{$movie->title}}></a>{{$movie->title}}</li>
+                <li><a href="route('detail', $movie->it)" {{$movie->title}}></a>{{$movie->title}} - {{$movie->original_title}}  - {{$movie->nationality}} - {{$movie->date}} - {{$movie->vote}}</li>
+                
                 @endforeach
-            </ul> --}}
+            </ul>
           
           
           </div>
