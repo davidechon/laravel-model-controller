@@ -38,6 +38,23 @@
           </div>
         
 
+    <h1>Movies</h1>
+    {{-- @dump($comics) --}}
+    <div class="container cards-container">
+      <div class="card-group">
+        <div class="btn-top">Current Series</div>
+          <div class="row">
+            @foreach ($movies as $movie)
+              <ul class="card-box">
+                <li><a href="route('detail', $movie->it)" {{$movie->title}}></a></li>
+                  
+              </ul>
+            @endforeach
+          </div> <!-- /row -->
+        </div> <!-- /btn-top -->   
+      </div> <!-- /card-group -->   
+    </div> <!-- /container cards-container -->
+
     </main>
     
 
